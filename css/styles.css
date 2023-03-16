@@ -56,16 +56,17 @@ ul {
     align-items: center;
 }
 
-.contacts-nav {
-    display: flex;
-    align-items: flex-start;
-}
-
 @media (min-width: 1158px) {
-    .contacts-nav {
-
+    .header-container {
+        align-items: flex-start;
     }
 }
+
+.contacts-nav {
+    display: flex;
+    align-items: center;
+}
+
 
 @media (max-width: 1158px) {
     .contacts-nav {
@@ -75,6 +76,11 @@ ul {
     }
 }
 
+@media (max-width: 768px) {
+    .contacts-nav{
+        margin: 0;
+    }
+}
 
 
 .logo-first {
@@ -98,6 +104,7 @@ ul {
 .main-nav {
     display: flex;
     align-items: center;
+    gap: 40px;
 }
 
 .site-nav {
