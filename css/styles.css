@@ -39,6 +39,14 @@ ul {
     margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+    .contacts-nav {
+        flex-direction: column-reverse;
+        gap: ;
+    }
+}
+
+
 .logo-first {
     font-family: "Raleway";
     font-weight: 800;
