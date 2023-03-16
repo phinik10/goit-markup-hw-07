@@ -40,11 +40,41 @@ ul {
 }
 
 @media (min-width: 768px) {
-    .contacts-nav {
-        flex-direction: column-reverse;
-        gap: ;
+    .container {
+        max-width: 768px;
     }
 }
+
+@media (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
+}
+
+.header-container-desktop {
+    display: flex;
+    align-items: center;
+}
+
+.contacts-nav {
+    display: flex;
+    align-items: flex-start;
+}
+
+@media (min-width: 1158px) {
+    .contacts-nav {
+
+    }
+}
+
+@media (max-width: 1158px) {
+    .contacts-nav {
+        flex-direction: column;
+        gap: 12px;
+      
+    }
+}
+
 
 
 .logo-first {
