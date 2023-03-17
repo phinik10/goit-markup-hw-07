@@ -77,11 +77,16 @@ ul {
 }
 
 @media (max-width: 768px) {
-    .contacts-nav{
-        margin: 0;
+    .contact {
+        margin-right: 0;
     }
 }
 
+@media (max-width: 768px) and (min-width: 320px) {
+    .header-container-desktop {
+        display: none;
+    }
+}
 
 .logo-first {
     font-family: "Raleway";
@@ -114,8 +119,8 @@ ul {
  
 
 
-.nav + .nav {
-    margin-left: 40px;
+.main-nav .nav:not(:last-child) {
+    margin-right: 40px;
 }
 
 .nav-link {
@@ -185,8 +190,8 @@ ul {
     margin-left: auto;
 }
 
-.contact + .contact {
-    margin-left: 40px;
+.contacts-nav .contact:not(:last-child) {
+    margin-right: 40px;
 }
 
 .hero {
