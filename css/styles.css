@@ -816,9 +816,16 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 
 .page-footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     background: var(--dark);
+}
+
+@media (min-width: 1158px) {
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
 
 .text-footer {
@@ -845,9 +852,49 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 72px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+    .footer-container {
+        flex-wrap: wrap;
+        column-gap: 24px;
+        justify-content: center;
+    }
+}
+
+
+
 .socials-footer-container {
     margin-left: 120px;
 }
+
+@media (max-width: 767px) {
+    .socials-footer-container {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .footer-first {
+        max-width: 268px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1157px) {
+    .footer-first {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 .socials-footer {
     color: var(--white);
@@ -898,6 +945,18 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 .subscribe-container {
     display: block;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .subscribe-container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+    .subscribe-container {
+        margin-left: -43px;
+    }
 }
 
 .footer-form {
