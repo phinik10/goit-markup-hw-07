@@ -68,10 +68,18 @@ ul {
 }
 
 
-@media (max-width: 1158px) {
+@media (min-width: 768px) {
     .contacts-nav {
         flex-direction: column;
         gap: 12px;
+      
+    }
+}
+
+@media (min-width: 1158px) {
+    .contacts-nav {
+        flex-direction: row;
+        gap: 40px;
       
     }
 }
