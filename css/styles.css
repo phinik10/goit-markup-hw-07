@@ -459,12 +459,22 @@ ul {
     height: auto ;
 }
 
-.pic + .pic  {
-    margin-left: 24px;
+.image .pic:not(:last-child) {
+    margin-right: 24px;
 }
 
 .gallery {
     background: var(--light);
+}
+
+.section-img {
+    display: none;
+}
+
+@media (min-width: 1158px) {
+    .section-img {
+        display: flex;
+    }
 }
 
 .caption {
