@@ -263,8 +263,6 @@ ul {
     margin-right: auto;
 }
 
-
-
 .hero-title {
     margin: 0 auto;
     margin-top: 0;
@@ -276,6 +274,16 @@ ul {
     letter-spacing: 0.02em;
     color: var(--white);
     width: 498px;
+}
+
+@media (min-width: 768px) {
+    .hero-title {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.11;
+    margin-bottom: 36px;
+    max-width: 496px;
+}
 }
 
 .hero-button {
