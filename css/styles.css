@@ -34,10 +34,11 @@ ul {
 }
 
 .container {
-    width: 1158px;
+    max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
 }
+
 
 @media (min-width: 768px) {
     .container {
@@ -526,7 +527,7 @@ ul {
 }
 
 @media (min-width: 1158px) {
-    .gallery-list .master {
+    .gallery-list .staff {
         flex-basis: calc((100%-72px) / 4);
     }
 }
