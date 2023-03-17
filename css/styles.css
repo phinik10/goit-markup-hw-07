@@ -366,6 +366,49 @@ ul {
     }
 }
 
+@media (min-width: 768px)  {
+    .flex-item  {
+        flex-basis: calc((100%-24px) / 2);
+        max-width: 356;
+    }
+}
+
+@media (min-width: 1158px) {
+    .flex-list .flex-item {
+        display: block;
+    }
+}
+
+.flex-item .subtitle {
+    margin: 8px 0 8px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+}
+
+
+@media (min-width: 768px) {
+    .flex-item .subtitle {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1158px) {
+    .flex-item .subtitle {
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02;
+    }
+}
+
+@media (min-width: 768px) {
+    .flex-item .icon {
+        display: none;
+    }
+}
+
 .flex-item {
     display: block;
     width: 264px;
