@@ -76,6 +76,13 @@ ul {
     }
 }
 
+@media (min-width: 768px) {
+    .contacts-nav .contact {
+    margin: 0px;
+    padding: 0;
+}
+}
+
 @media (min-width: 1158px) {
     .contacts-nav {
         flex-direction: row;
@@ -238,9 +245,7 @@ ul {
     margin-left: auto;
 }
 
-.contacts-nav .contact:not(:last-child) {
-    margin-right: 40px;
-}
+
 
 @media (min-width: 1158px) {
     .contact {
