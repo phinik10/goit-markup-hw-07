@@ -292,14 +292,14 @@ ul {
 .hero-title {
     margin: 0 auto;
     margin-top: 0;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 36px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--white);
-    width: 498px;
+    max-width: 320px;
 }
 
 @media (min-width: 768px) {
@@ -356,24 +356,24 @@ ul {
 
 .flex-list {
     display: flex;
-    justify-content: center;
+    
 }
 
-@media (min-width: 320px) and (max-width: 1158px) {
+@media (min-width: 320px) and (max-width: 1157px) {
     .flex-list {
         flex-wrap: wrap;
         justify-content: center;
     }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .flex-list .flex-item:not(:last-child) {
         margin-right: 0;
         margin-bottom: 72px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1157px) {
+@media (min-width: 768px) and (max-width: 1158px) {
     .flex-list {
        row-gap: 72px;
        column-gap: 24px;
@@ -390,7 +390,7 @@ ul {
 @media (min-width: 768px)  {
     .flex-item  {
         flex-basis: calc((100%-24px) / 2);
-        max-width: 356;
+        max-width: 356px;
     }
 }
 
@@ -412,7 +412,7 @@ ul {
 
 @media (min-width: 768px) {
     .flex-item .subtitle {
-        text-align: center;
+        text-align: start;
     }
 }
 
@@ -424,11 +424,12 @@ ul {
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1158px) {
     .flex-item .icon {
         display: none;
     }
 }
+
 
 .flex-item {
     display: block;
@@ -624,15 +625,30 @@ ul {
 
 .client-list {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 16px;
 }
+
+@media (min-width: 768px) {
+    .client-list {
+        column-gap: 24px;
+    }
+}
+
+@media (min-width: 1158px) {
+    .client-list {
+        flex-wrap: nowrap;
+    }
+}
+
+
+
 
 .client {
     width: 168px;
     height: 88px;
-}
-
-.client + .client {
-    margin-left: 24px;
 }
 
 .adress-client {
