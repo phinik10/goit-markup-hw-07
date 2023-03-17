@@ -333,6 +333,34 @@ ul {
     justify-content: center;
 }
 
+@media (min-width: 320px) and (max-width: 1158px) {
+    .flex-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .flex-list .flex-item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 72px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1157px) {
+    .flex-list {
+       row-gap: 72px;
+       column-gap: 24px;
+    }
+}
+
+@media (min-width: 1158px)  {
+    .flex-list  {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+}
+
 .flex-item {
     display: block;
     width: 264px;
