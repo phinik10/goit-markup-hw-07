@@ -35,24 +35,26 @@ ul {
 
 .container {
     max-width: 428px;
-    padding: 0 15px;
-    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
     }
 }
 
-@media (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
     }
 }
 
-.header-container-desktop {
+.desktop-version {
     display: flex;
     align-items: center;
 }
@@ -144,6 +146,12 @@ ul {
     margin-left: 76px;
 }
 
+@media (min-width: 768px) {
+    .site-nav {
+        margin-left: 120px;
+    }
+}
+
 .logo-first {
     font-family: "Raleway";
     font-weight: 800;
@@ -157,6 +165,8 @@ ul {
     color: var(--dark);
    
 }
+
+
 
 .link {
     text-decoration: none;
