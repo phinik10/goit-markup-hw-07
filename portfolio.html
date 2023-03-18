@@ -13,7 +13,7 @@
     </head>
     <body>
         <header class="page-header">
-            <div class="container">
+            <div class="container desktop-version">
             <nav class="main-nav">
             <a href="./index.html" class="logo-first logo">WEB<span class="logo-second logo">STUDIO</span></a>
             <ul class="site-nav">
@@ -21,14 +21,20 @@
                 <li class="nav"><a href="./portfolio.html" class="link nav-link current">Portfolio</a></li>
                 <li class="nav"><a href="" class="link nav-link">Contacts</a></li>
             </ul>
+            </nav>
             <address class="page-address">
                 <ul class="contacts-nav">
                     <li class="contact"><a href="mailto:info@devstudio.com" class="link contact-link">info@devstudio.com</a></li>
                     <li class="contact"><a href="tel:+110001111111" class="link contact-link">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
-            </nav>
             </div>
+            <div class="main-nav-mobile">
+            <a href="./index.html" class="logo-first logo">WEB<span class="logo-second logo">STUDIO</span></a>
+            <button type="button" class="hamburger-menu js-open-menu">
+                <span class="hamburger-icon"></span>
+            </button>
+        </div>
         </header>
         <main>
             <section class="section portfolio">
@@ -224,15 +230,14 @@
         
             <form class="footer-form">
             <p class="footer-form-caption socials-footer">Subscribe</p>
-                    <label class="footer-form-field"></label>
-                    <div class="input-subscribe">
+                    
                     <input class="footer-input" type="email" name="email" id="email" placeholder="E-mail" />
                     <button class="footer-form-btn" type="submit">Subscribe
                         <svg class="footer-form-btn-icon">
                             <use href="./images/icons.svg#icon-subscribe" width="24" height="24" ></use>
                         </svg>
                     </button>
-                    </div>
+                    
             </form>
         </div>
     </footer>

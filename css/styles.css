@@ -701,9 +701,6 @@ ul {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn + .btn {
-    margin-left: 24px;
-}
 
 .item-btn:hover,
 .item-btn:focus {
@@ -715,11 +712,12 @@ ul {
 
 .list-btn {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-top: 0;
     margin-bottom: 72px;
+    gap: 24px;
 }
 
 .service-link{
