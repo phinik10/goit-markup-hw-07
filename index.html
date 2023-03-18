@@ -32,7 +32,7 @@
     </div>
         <div class="main-nav-mobile">
             <a href="./index.html" class="logo-first logo">WEB<span class="logo-second logo">STUDIO</span></a>
-            <button type="button" class="hamburger-menu js-open-menu">
+            <button type="button" class="hamburger-menu js-open-menu" js-open-menu>
                 <span class="hamburger-icon"></span>
             </button>
         </div>
@@ -384,9 +384,53 @@
     </div>
     </footer>
 
-    <div class="menu-mobile js-menu-mobile">
-        <div class="btn-mobile-container">
-            <button class=""></button>
+    <div class="mobile-menu is-open" js-menu-container>
+        <div class="mobile-container">
+            <button type="button" class="js-close-menu btn-mobile modal-close" js-close-menu>
+                <svg class="icon-mobile">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="site-nav mobile-nav">
+                <li class="nav"><a href="./index.html" class="link mobile-nav-link">Studio</a></li>
+                <li class="nav"><a href="./portfolio.html" class="link mobile-nav-link">Portfolio</a></li>
+                <li class="nav"><a href="" class="link mobile-nav-link">Contacts</a></li>
+            </ul>
+            <ul class="contacts-nav mobile-contacts">
+            <li class="contact"><a href="mailto:info@devstudio.com" class="link mobile-contact-link">info@devstudio.com</a></li>
+            <li class="contact"><a href="tel:+110001111111" class="link mobile-contact-link">+11 (000) 111-11-11</a></li>
+        </ul>
+
+        <ul class="socials-list mobile">
+                <li class="socials-item">
+                    <a class="socials-link" href="#">
+                        <svg class="socials-icon">
+                             <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials-item">
+                    <a class="socials-link" href="#">
+                        <svg class="socials-icon">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials-item">
+                    <a class="socials-link" href="#">
+                        <svg class="socials-icon">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials-item">
+                    <a class="socials-link" href="#">
+                        <svg class="socials-icon">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+        </ul>
         </div>
     </div>
 
