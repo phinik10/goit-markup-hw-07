@@ -531,15 +531,12 @@ ul {
 
 .staff {
     max-width: 264px;
-    flex-basis: calc(100%-34px);
     padding-bottom: 32px;
     background: var(--white);
     border-radius: 0px 0px 4px 4px;
 }
 
-.gallery-list .staff:not(:last-child) {
-    margin-right: 24px;
-}
+
 
 @media (min-width: 768px) {
     .gallery-list .staff {
@@ -965,14 +962,46 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     margin-left: 80px;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+    .footer-form {
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-form {
+        display: flex;
+       
+    }
+}
+
 .footer-form-caption {
     
     margin-bottom: 16px;
     margin-left: 80px;
 }
 
+@media (min-width: 768px) {
+    .footer-form-caption {
+        text-align: start;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .footer-form-caption {
+        margin-left: 0;
+    }
+}
+
 .input-subscribe {
     display: flex;
+}
+
+@media (min-width: 767px) {
+    .subscribe-container {
+        margin-top: 72px;
+    }
 }
 
 .footer-input{
@@ -988,7 +1017,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     background-color: var(--dark);
-    min-width: 264px;
+    width: 264px;
     height: 40px;
     color: var(--white);
     padding: 8px 0px 8px 16px;
@@ -999,6 +1028,12 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .footer-input:focus {
     outline: none;
     border-color: var(--white);
+}
+
+@media (min-width: 768px) {
+    .footer-input {
+        width: 264px;
+    }
 }
 
 .footer-input::placeholder {
@@ -1040,7 +1075,18 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     background-color: var(--primary-brend);
 }
 
+@media (min-width: 768px) {
+    .footer-form-btn {
+        margin: 0;
+    }
+}
 
+@media (min-width: 320px) and (max-width: 767px) {
+    .footer-form-btn {
+      
+        
+    }
+}
 
 
 /* Modal */
