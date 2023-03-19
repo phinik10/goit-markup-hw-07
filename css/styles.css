@@ -979,7 +979,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 @media (min-width: 768px) and (max-width: 1157px) {
     .subscribe-container {
-        margin-left: -43px;
+        margin-left: -80px;
     }
 }
 
@@ -1107,7 +1107,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
         
         display: inline-flex;
         align-items: center;
-        
+        margin-top: 0;
     }
 }
 
@@ -1400,7 +1400,12 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     height: 100%;
     background-color: var(--white);
     transform: translateX(100%);
-
+    padding: 80px 35px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: transform 250ms easy-in-out;
 }
 
 
@@ -1420,9 +1425,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     transform: translateX(0);
 }
 
-.mobile-menu {
-    padding: 80px 35px 40px 40px;
-}
+
 
 .btn-mobile {
     display: flex;
@@ -1433,9 +1436,10 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     position: absolute;
     right: 24px;
     top: 24px;
-
+    border-radius: 50%;
     background-color: transparent;
     border: 1px solid rgba(231, 233, 252, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-mobile {
