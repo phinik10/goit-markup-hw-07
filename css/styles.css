@@ -131,7 +131,7 @@ ul {
     margin: auto;
 }
 
-.hamburger-menu {
+.hamburger-btn {
     background-color: transparent;
     border: none;
     padding: 0;
@@ -368,7 +368,7 @@ ul {
 @media (min-width: 320px) and (max-width: 1157px) {
     .flex-list {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
     }
 }
 
