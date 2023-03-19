@@ -126,7 +126,9 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     padding: 24px 16px;
+    margin: auto;
 }
 
 .hamburger-menu {
@@ -1390,8 +1392,10 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.mobile-menu {
-    
+
+@media (min-width: 767px) {
+    .mobile-menu {
+    position: relative;
     position: fixed;
     top: 0;
     left: 0;
@@ -1400,26 +1404,21 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     height: 100%;
     background-color: var(--white);
     transform: translateX(100%);
-    padding: 80px 35px 40px 40px;
+    
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
     overflow-x: hidden;
     transition: transform 250ms easy-in-out;
 }
-
-
-
-.mobile-container {
-    position: relative;
-    overflow: auto;
-    width: 100%;
-    height: 100%;
-    max-width: 428px;
-    max-height: 796px;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
+ 
+    .mobile-menu{
+        
+        padding: 80px 35px 40px 40px;
+    }
 
 .mobile-menu .is-open {
     transform: translateX(0);
@@ -1457,12 +1456,12 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     text-transform: capitalize;
 }
 
-.mobile-nav-link:hover,
-.mobile-nav-link:focus {
+.mobile-item .mobile-nav-link:hover,
+.mobile-item .mobile-nav-link:focus {
     color: var(--pressed-state);
 }
 
-.mobile-nav .nav:not(:last-child) {
+.mobile-nav .mobile-item:not(:last-child) {
     margin-bottom: 40px;
 }
 
@@ -1493,11 +1492,14 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     margin-bottom: 48px;
 }
 
-.mobile-contacts .contact {
+.mobile-contacts .contact-item {
     margin-bottom: 40px;
+    padding: 0;
 }
 
 .social-list .mobile {
+    display: flex;
+    flex-wrap: wrap;
     gap: 56px;
 }
 
