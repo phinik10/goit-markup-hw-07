@@ -1424,6 +1424,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     transition: transform 250ms easy-in-out;
 }
 }*/
+@media (max-width: 768px) {
+    
 
 .mobile-menu {
     position: fixed;
@@ -1435,7 +1437,9 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     background-color: var(--white);
     transform: translateX(100%);
     transition: transform 0.8s;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 }
  
     .mobile-menu{
@@ -1447,11 +1451,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     transform: translateX(0);
 }
 
-@media (min-width: 768px) {
-    .mobile-menu.mobile-menu.is-open {
-        transform: translateX(0);
-    }
-}
+
 @media (min-width: 768px)  {
     .mobile-menu {
         display: none;
