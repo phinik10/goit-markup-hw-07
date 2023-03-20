@@ -986,6 +986,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 .subscribe-container {
     display: block;
+    
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -994,16 +995,12 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     }
 }
 
-@media (min-width: 768px) and (max-width: 1157px) {
-    .subscribe-container {
-        margin-left: -80px;
-    }
-}
+
 
 .footer-form {
     
     display: block;
-    margin-left: 80px;
+    
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1023,7 +1020,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .footer-form-caption {
     
     margin-bottom: 16px;
-    margin-left: 80px;
+    
 }
 
 @media (min-width: 768px) {
@@ -1042,9 +1039,21 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 @media (min-width: 767px) and (max-width: 1157px){
     .subscribe-container {
         margin-top: 72px;
+        
     }
 }
 
+@media (min-width: 1158px) {
+    .subscribe-container {
+        margin-left: 80px;
+    }
+}
+
+@media (min-width: 1158px) {
+    .footer-input {
+        width: 264px;
+    }
+}
 .footer-input{
     position: relative;
 }
@@ -1058,7 +1067,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     background-color: var(--dark);
-    width: 100%;
+    width: 264px;
     height: 40px;
     color: var(--white);
     padding: 8px 0px 8px 16px;
@@ -1071,11 +1080,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     border-color: var(--white);
 }
 
-@media (min-width: 768px) {
-    .footer-input {
-        width: 264px;
-    }
-}
+
 
 .footer-input::placeholder {
     font-size: 12px;
