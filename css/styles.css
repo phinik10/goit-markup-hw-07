@@ -1583,13 +1583,13 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     margin-bottom: 0;
 }
 
-.social-list .mobile {
+.mobile-socials-list  {
     display: flex;
     flex-wrap: wrap;
     gap: 56px;
 }
 
-.socials-icon .mobile {
+.socials-icon.mobile{
     width: 24px;
     height: 24px;
 }
