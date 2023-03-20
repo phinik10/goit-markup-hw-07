@@ -913,7 +913,26 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 .footer-container {
     display: flex;
-    
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    gap: 72px;
+}
+
+@media (min-width: 768px) and (max-width: 1158px) {
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: left;
+        width: 552px;
+        flex-direction: row;
+        column-gap: 24px;
+    }
+}
+
+@media (min-width: 1158px) {
+    .footer-container {
+        gap: 0;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -925,7 +944,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     }
 }
 
-@media (min-width: 768px) and (max-width: 1157px) {
+/*@media (min-width: 768px) and (max-width: 1157px) {
     .footer-container {
         flex-wrap: wrap;
         column-gap: 24px;
@@ -933,7 +952,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
         justify-content: center;
     }
 }
-
+*/
 
 @media (min-width: 1158px) {
 .socials-footer-container {
