@@ -1464,9 +1464,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     transition: transform 250ms easy-in-out;
 }
 }*/
-@media (max-width: 768px) {
-    
-
+@media (min-width: 428px) {
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -1483,6 +1481,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     display: flex;
     flex-direction: column;
+    
    
 }
 }
@@ -1495,21 +1494,19 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     transform: translateX(0);
 }
 
-
 @media (min-width: 768px)  {
     .mobile-menu {
         display: none;
     }
 }
+
 .btn-mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 24px;
     height: 24px;
     position: absolute;
     right: 24px;
     top: 24px;
+    padding: 0;
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
@@ -1542,19 +1539,25 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .mobile-nav .mobile-item:not(:last-child) {
     margin-bottom: 40px;
 }
-
+/*
 .mobile-nav {
     margin-bottom: 284px;
+}*/
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .mobile-contact-link {
     font-style: normal;
     font-weight: 700;
-    font-style: 36px;
+    font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--primary-brend);
+    text-decoration: none;
 }
 
 .mobile-contact-link-mail {
@@ -1564,6 +1567,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     letter-spacing: 0.02em;
     text-transform: none;
     color: var(--text);
+    text-decoration: none;
 }
 
 .mobile-contacts {
@@ -1571,8 +1575,12 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .mobile-contacts .contact-item {
-    margin-bottom: 40px;
-    padding: 0;
+   margin-bottom: 40px;
+   padding: 0;
+}
+
+.mobile-contacts .contact-item:last-child {
+    margin-bottom: 0;
 }
 
 .social-list .mobile {
