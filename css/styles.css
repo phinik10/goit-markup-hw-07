@@ -66,6 +66,14 @@ h2 {
     }
 }
 
+/*@media (min-width: 768px) {
+    .container {
+        width: 552px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}*/
+
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
@@ -276,7 +284,7 @@ h2 {
 
 
 
-@media (min-width: 1158px) {
+@media (max-width: 1158px)  {
     .contact {
     font-size: 16px;
     line-height: 1.5;
@@ -295,6 +303,13 @@ h2 {
     padding-bottom: 188px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 1158px) {
+    .hero {
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
 }
 
 .hero-title {
@@ -422,7 +437,7 @@ h2 {
 }
 
 .flex-item .subtitle {
-    margin: 8px 0 8px 0;
+    
     text-align: center;
     font-weight: 700;
     font-size: 36px;
@@ -908,14 +923,16 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     .footer-container {
         flex-wrap: wrap;
         column-gap: 24px;
-        justify-content: start;
+        row-gap: 72px;
+        justify-content: center;
     }
 }
 
 
-
+@media (min-width: 1158px) {
 .socials-footer-container {
     margin-left: 120px;
+}
 }
 
 @media (max-width: 767px) {
@@ -1042,12 +1059,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 
-@media (min-width: 767px) and (max-width: 1157px){
-    .subscribe-container {
-        margin-top: 72px;
-        
-    }
-}
+
 
 @media (min-width: 1158px) {
     .subscribe-container {
