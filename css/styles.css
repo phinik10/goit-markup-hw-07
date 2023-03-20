@@ -297,18 +297,26 @@ h2 {
     background-size: cover;
     background-position: center;
     text-align: center;
-    max-width: 1440px;
+    max-width: 428px;
     background-color: var(--dark);
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     margin-left: auto;
     margin-right: auto;
 }
 
-@media (max-width: 1158px) {
+@media (min-width: 1158px) {
     .hero {
-        padding-top: 112px;
-        padding-bottom: 112px;
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx)  {
+    .hero {
+        background-image: linear-gradient(0deg, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     }
 }
 
@@ -378,22 +386,27 @@ h2 {
 
 @media (min-width: 1158px) {
     .section {
-        padding-top: 120px;
+    padding-top: 120px;
     padding-bottom: 120px;
     }
 }
 .flex-list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 @media (min-width: 320px) and (max-width: 1157px) {
     .flex-list {
-        flex-wrap: wrap;
         justify-content: flex-start;
     }
 }
 
-
+@media (min-width: 1158px)  {
+    .flex-list  {
+        flex-wrap: nowrap;
+        
+    }
+}
 
 @media (min-width: 320px) and (max-width: 767px) {
     .flex-list .flex-item:not(:last-child) {
@@ -409,12 +422,7 @@ h2 {
     }
 }
 
-@media (min-width: 1158px)  {
-    .flex-list  {
-        flex-wrap: nowrap;
-        
-    }
-}
+
 
 @media (min-width: 768px)  {
     .flex-item  {
@@ -540,7 +548,16 @@ h2 {
 
 .gallery {
     background: var(--light);
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+
+@media (min-width: 1158px) {
+    .gallery {
+    padding-top: 120px;
     padding-bottom: 120px;
+}
 }
 
 .caption {
@@ -656,8 +673,15 @@ h2 {
 }
 
 .customers {
-    padding-top: 130px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+@media (min-width: 1158px) {
+    .customers {
+        padding-top: 130px;
+        padding-bottom: 120px;
+    }
 }
 
 .client-list {
