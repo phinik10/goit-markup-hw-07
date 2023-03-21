@@ -806,12 +806,21 @@ h2 {
 
 .list-btn {
     display: flex;
-    flex-wrap: wrap;
+    
     
     justify-content: center;
     margin-top: 0;
     margin-bottom: 72px;
     gap: 24px;
+}
+
+@media (max-width: 768px) {
+    .list-btn {
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: left;
+        margin-bottom: 48px;
+    }
 }
 
 @media (min-width: 1158px) {
@@ -836,8 +845,15 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
+    justify-content: center;
 }
 
+@media (min-width: 768px) {
+    .service-list {
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+}
 @media (min-width: 768px) and (max-width: 1157px) {
     .service-list {
         
@@ -845,18 +861,39 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-    .service-list .service {
-        flex-basis: calc((100%-768px) / 2);
+
+
+@media (max-width: 768px) {
+    .service-list {
+      width: 100%;
+      max-width: 396px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 48px;
+      
     }
+}
+
+@media (min-width: 1158px) {
+.service {
+    
+    flex-basis: calc((100% - 2 * 24px)/3);
+}
+}
+
+@media (min-width: 768px) {
+.service.list {
+    
+    flex-basis: calc((100% - 24px)/2);
+}
 }
 
 
 
-
-.service {
-    
-    flex-basis: calc((100% - 2 * 24px)/3);
+@media (max-width: 768px) {
+.service-list img {
+    width: 356px;
+}
 }
 
 /*.service:nth-child(3n) {
@@ -866,6 +903,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .service:nth-last-child(-n+3){
     margin-bottom: 0;
 }*/
+
+
 
 .service-thumb {
     position: relative;
