@@ -287,7 +287,6 @@ h2 {
 @media (min-width: 1158px) {
     .contact-link {
     font-size: 16px;
-    line-height: 1.5;
 }
 }
 
@@ -503,7 +502,6 @@ h2 {
 @media (min-width: 320px) and (max-width: 768px) {
     .flex-item .text  {
         text-align: left;
-        width: 396px
     }
 }
 @media (max-width: 1158px) {
