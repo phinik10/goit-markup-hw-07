@@ -141,6 +141,7 @@ h2 {
     width: 100%;
     padding: 24px 16px;
     margin: auto;
+    max-width: 428px;
 }
 
 .hamburger-btn {
